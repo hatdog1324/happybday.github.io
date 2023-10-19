@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Album</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Raleway"
+    />
+    <style>
+      body,
+      h1,
+      h2 {
+        font-family: "Raleway", sans-serif;
+      }
+      body,
+      html {
+        height: 100%;
+      }
+      p {
+        line-height: 2;
+      }
+      .bgimg,
+      .bgimg2 {
+        min-height: 100%;
+        background-position: center;
+        background-size: cover;
+      }
+      .bgimg {
+        background-image: url("1stdate.jpeg");
+      }
+      .bgimg2 {
+        background-image: url("icecream.jpeg");
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header / Home-->
+    <header
+      class="w3-display-container w3-wide bgimg w3-grayscale-min"
+      id="home"
+    >
+      <div class="w3-display-middle w3-text-white w3-center">
+        <h1 class="w3-jumbo">Hampeh Berthdey</h1>
+        <h2>Atapu</h2>
+        <h2><b>much</b></h2>
+      </div>
+    </header>
+
+    <!-- Navbar (sticky bottom) -->
+    <div class="w3-bottom w3-hide-small">
+      <div
+        class="w3-bar w3-white w3-center w3-padding w3-opacity-min w3-hover-opacity-off"
+      >
+        <a href="homepage.html" style="width: 25%" class="w3-bar-item w3-button"
+          >Home</a
+        >
+      </div>
+    </div>
+
+    <!-- About / Jane And John -->
+    <div
+      class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min"
+      id="us"
+    >
+      <div class="w3-content">
+        <h1 class="w3-center w3-text-grey"><b>Happy Birthday!</b></h1>
+        
+        <img
+          class="w3-round w3-grayscale-min"
+          src="hotwheels.jpeg"
+          style="width: 100%; margin: 32px 0"
+        />
+        <p>
+          <i
+            >Watching you grow throughout the years has been a roller coaster.
+            I couldn't have been more grateful to have you. I saw you do 
+            multiple things that no other can and believe me, my love grows for 
+            you each passing day. Everyday i could always say to you that i am
+            proud of you and never get bored. I loved the 16th Nia, I love 
+            the 17th Nia, and I'll be continuing to do so for next next next
+            next next next next next next next next next next next next next
+            next next next next next next next next next next next next next
+            next next next next next next next next next next next next next
+            years. I'll be yours and love you forever til forever falls apart.</i
+          >
+        </p>
+        <br />
+        <p class="w3-center">
+          <a
+            href="#wedding"
+            class="w3-button w3-black w3-round w3-padding-large w3-large"
+            >Bottom</a
+          >
+        </p>
+      </div>
+    </div>
+
+    <!-- Background photo -->
+    <div class="w3-display-container bgimg2">
+      <div class="w3-display-middle w3-text-white w3-center">
+        <h1 class="w3-jumbo">Ganda oh! Agree ka diba.</h1>
+        <br />
+        <h2>Of course..</h2>
+      </div>
+    </div>
+
+    <!-- Wedding information -->
+    <div
+      class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min w3-center"
+      id="wedding"
+    >
+      <div class="w3-content">
+        <h1 class="w3-text-grey"><b>Journey With You<br>
+        <q>each pic has its own description</q></b></h1>
+        <div class="w3-content w3-display-container">
+
+            <div class="w3-display-container mySlides">
+              <img src="unanguna.jpeg" style="width:100%">
+              <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                Where it all started
+              </div>
+            </div>
+            
+            <div class="w3-display-container mySlides">
+              <img src="unangbday.jpeg" style="width:100%">
+              <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+                Last Years Bday
+              </div>
+            </div>
+            
+            <div class="w3-display-container mySlides">
+              <img src="1stdateulit.jpeg" style="width:100%">
+              <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+                1st Date Together
+              </div>
+            </div>
+            
+            <div class="w3-display-container mySlides">
+              <img src="bracelet.jpeg" style="width:100%">
+              <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
+                Bracelet cutie
+              </div>
+            </div>
+            
+            <div class="w3-display-container mySlides">
+              <img src="chichi.jpeg" style="width:100%">
+              <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+                Like Mother Like Son
+              </div>
+            </div>
+            
+            <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+            
+            </div>
+            
+            <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+            
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+            
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                 x[i].style.display = "none";  
+              }
+              x[slideIndex-1].style.display = "block";  
+            }
+            </script>    
+    </div>
+      </div>
+    </div>
+
+    <!-- RSVP section -->
+    <div
+      class="w3-container w3-padding-64 w3-pale-red w3-center w3-wide"
+      id="rsvp"
+    >
+      <h1>I love you very much!</h1>
+      <p class="w3-large">Can't wait for another 365 days of watching you grow</p>
+      <p class="w3-xlarge">
+        <button
+          onclick="document.getElementById('id01').style.display='block'"
+          class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off"
+          style="padding: 8px 60px"
+        >
+          Click
+        </button>
+      </p>
+    </div>
+
+    <!-- RSVP modal -->
+    <div id="id01" class="w3-modal">
+      <div
+        class="w3-modal-content w3-card-4 w3-animate-zoom"
+        style="padding: 32px; max-width: 600px"
+      >
+        <div class="w3-container w3-white w3-center">
+          <h1 class="w3-wide">WILL YOU BE MINE?</h1>
+          <p>This means forever hehe, no take backs.</p>
+          <form>
+            <input
+              class="w3-input w3-border"
+              type="text"
+              placeholder="Name(s)"
+              name="name"
+            />
+          </form>
+          <p><i>Sincerely, Hubby</i></p>
+          <div class="w3-row">
+            <div class="w3-half">
+              <button
+                onclick="document.getElementById('id01').style.display='none'"
+                type="button"
+                class="w3-button w3-block w3-green"
+              >
+                Yes
+              </button>
+            </div>
+            <div class="w3-half">
+              <button
+                onclick="document.getElementById('id01').style.display='none'"
+                type="button"
+                class="w3-button w3-block w3-red"
+              >
+                Yes, but red
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-16">
+      </p>
+    </footer>
+    <div class="w3-hide-small" style="margin-bottom: 32px"> </div>
+  </body>
+</html>
